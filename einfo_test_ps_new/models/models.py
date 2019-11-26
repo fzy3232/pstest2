@@ -2,14 +2,14 @@
 
 from odoo import models, fields, api
 
-# class new_module(models.Model):
-#     _name = 'new_module.new_module'
+class einfo_test_ps_new(models.Model):
+    _name = 'einfo_test_ps_new.einfo_test_ps_new'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
+    name = fields.Char()
+    value = fields.Integer()
+    value2 = fields.Float(compute="_value_pc", store=True)
+    description = fields.Text()
+
+    @api.depends('value')
+    def _value_pc(self):
+        self.value2 = float(self.value) / 100
