@@ -17,12 +17,12 @@
    'depends': ['base','contacts'],
 
    'data': [
-		# "views/contact_modify.xml", 
-		# "views/contact_modify_line.xml", 
+		"views/contact_modify.xml", 
+		"views/contact_modify_line.xml", 
 		"security/ir.model.access.csv",
- 		# "security/res.groups.xml",
- 		# "views/menu.xml",
- 		# "views/data.xml",
+ 		"security/res.groups.xml",
+ 		"views/menu.xml",
+ 		"views/data.xml",
  
    ],
 
