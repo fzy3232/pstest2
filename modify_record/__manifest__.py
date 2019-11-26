@@ -14,7 +14,7 @@
    'category': 'Tools',
    'version': '1.0',
 
-   'depends': ['base'],
+   'depends': ['base','contacts'],
 
    'data': [
 		# "views/contact_modify.xml", 
