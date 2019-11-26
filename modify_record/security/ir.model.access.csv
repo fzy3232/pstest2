@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_contact_modify_line,contact_modify_line.group_system_contact_modify_line,model_contact_modify_line,base.group_system,1,1,1,1
+access_contact_modify,contact_modify.group_system_contact_modify,model_contact_modify,base.group_system,1,1,1,1
+

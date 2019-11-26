@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_form_contact_modify_line">
+        <field name="name">修改单元</field>
+        <field name="model">contact.modify.line</field>
+        <field name="arch" type="xml">
+            <form string="修改单元">
+                <sheet>
+                    <group>
+                        <field name="record_id"/>
+                        <field name="field"/>
+                        <field name="value"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_tree_contact_modify_line">
+        <field name="name">修改单元</field>
+        <field name="model">contact.modify.line</field>
+        <field name="arch" type="xml">
+            <tree string="修改单元">
+                <field name="record_id"/>
+                <field name="field"/>
+                <field name="value"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_contact_modify_line">
+        <field name="name">修改单元</field>
+        <field name="res_model">contact.modify.line</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- <record model="res.groups" id="access_group_group_system">
+        <field name="name">设置</field>
+    </record> -->
+
+</odoo>

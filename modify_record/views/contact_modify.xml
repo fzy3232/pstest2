@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_form_contact_modify">
+        <field name="name">修改记录</field>
+        <field name="model">contact.modify</field>
+        <field name="arch" type="xml">
+            <form string="修改记录">
+                <header>
+                    <button name="exec_modify" string="审批通过" type="object" class="oe_highlight"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <h1><field name="name"/></h1>
+                    <group>
+                        <!-- <field name="name"/> -->
+                        <field name="record" domain="[('active','=',True)]"/>
+                        <!-- <field name="model_id"/> -->
+                        <field name="apply_time"/>
+                        <field name="field_lines">
+                            <tree editable="bottom">
+                                <field name="field" domain="[('model_id.model','=','res.partner'),('ttype','not in',['one2many','many2many'])]"/>
+                                <!-- <field name="field"/> -->
+                                <field name="value"/>
+                                <field name="csq"/>
+                            </tree>
+                        </field>
+                        <field name="applier"/>
+                        <field name="approver"/>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_tree_contact_modify">
+        <field name="name">修改记录</field>
+        <field name="model">contact.modify</field>
+        <field name="arch" type="xml">
+            <tree string="修改记录">
+                <field name="name"/>
+                <field name="record"/>
+                <!-- <field name="model_id"/> -->
+                <field name="apply_time"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_contact_modify">
+        <field name="name">修改记录</field>
+        <field name="res_model">contact.modify</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

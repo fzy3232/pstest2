@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_modify_approval_root" name="修改审批"/>
+    <menuitem id="menu_contact_modify" name="修改" parent="menu_modify_approval_root" action="action_contact_modify"/>
+    <menuitem id="menu_contact_modify_line" name="修改单元" parent="menu_modify_approval_root" action="action_contact_modify_line"/>
+</odoo>
